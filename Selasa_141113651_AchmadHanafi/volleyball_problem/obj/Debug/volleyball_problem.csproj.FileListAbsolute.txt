@@ -1,0 +1,9 @@
+D:\v\New folder\Selasa_141113651_AchmadHanafi\volleyball_problem\bin\Debug\volleyball_problem.exe.config
+D:\v\New folder\Selasa_141113651_AchmadHanafi\volleyball_problem\bin\Debug\volleyball_problem.exe
+D:\v\New folder\Selasa_141113651_AchmadHanafi\volleyball_problem\bin\Debug\volleyball_problem.pdb
+D:\v\New folder\Selasa_141113651_AchmadHanafi\volleyball_problem\obj\Debug\volleyball_problem.csprojResolveAssemblyReference.cache
+D:\v\New folder\Selasa_141113651_AchmadHanafi\volleyball_problem\obj\Debug\volleyball_problem.Form1.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\volleyball_problem\obj\Debug\volleyball_problem.Properties.Resources.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\volleyball_problem\obj\Debug\volleyball_problem.csproj.GenerateResource.Cache
+D:\v\New folder\Selasa_141113651_AchmadHanafi\volleyball_problem\obj\Debug\volleyball_problem.exe
+D:\v\New folder\Selasa_141113651_AchmadHanafi\volleyball_problem\obj\Debug\volleyball_problem.pdb
