@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 10 Des 2016 pada 18.16
+-- Generation Time: 30 Des 2016 pada 14.39
 -- Versi Server: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -42,10 +42,127 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`ID`, `Kode`, `Nama`, `JumlahAwal`, `HargaHPP`, `HargaJual`, `created_At`, `updated_At`) VALUES
-(1, '44312', 'Buku Ipa', 50, '120000.00', '150000.00', '2016-12-10 22:24:16', '2016-12-10 22:24:16'),
+(1, '290', 'Buku Ipa', 29, '38000.00', '45000.00', '2016-12-30 20:31:45', '2016-12-30 20:31:45'),
 (2, '22313', 'Harddisk External 1TB', 20, '750000.00', '800000.00', '2016-12-10 22:25:03', '2016-12-10 22:25:03'),
 (3, '34098', 'Flashdisk 8GB', 35, '60000.00', '70000.00', '2016-12-10 23:21:57', '2016-12-10 23:21:57'),
-(4, '34201', 'Headset Sony', 50, '350000.00', '460000.00', '2016-12-11 00:12:46', '2016-12-11 00:12:46');
+(4, '34201', 'Headset Sony', 50, '350000.00', '460000.00', '2016-12-11 00:12:46', '2016-12-11 00:12:46'),
+(5, '21', 'flashdisk', 20, '200000.00', '300000.00', '2016-12-30 19:41:48', '2016-12-30 19:41:48');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `customer`
+--
+
+CREATE TABLE `customer` (
+  `ID` int(11) NOT NULL,
+  `Nama` varchar(100) NOT NULL,
+  `Alamat` varchar(200) NOT NULL,
+  `Zip_code` varchar(20) NOT NULL,
+  `Phone_number` varchar(20) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `customer`
+--
+
+INSERT INTO `customer` (`ID`, `Nama`, `Alamat`, `Zip_code`, `Phone_number`, `Email`, `created_at`, `updated_at`) VALUES
+(1, 'Hanafi', 'Jalan Jemadi', '20239', '08122312345', 'hans@mail.com', '2016-12-30 20:36:13', '2016-12-30 20:36:13'),
+(2, 'Andy', 'Jalan Mabar Hilir', '20214', '083188888888', 'andy@mail.com', '2016-12-30 20:33:30', '2016-12-30 20:33:30');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pembelian`
+--
+
+CREATE TABLE `pembelian` (
+  `id` int(11) NOT NULL,
+  `kode` varchar(10) NOT NULL,
+  `id_supplier` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `pembelian`
+--
+
+INSERT INTO `pembelian` (`id`, `kode`, `id_supplier`, `created_at`, `updated_at`) VALUES
+(1, 'asd', 212, '2016-12-30 18:31:16', '2016-12-30 09:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pembelian_detail`
+--
+
+CREATE TABLE `pembelian_detail` (
+  `id` int(11) NOT NULL,
+  `Id_pembelian` int(11) NOT NULL,
+  `id_barang` int(11) NOT NULL,
+  `harga_barang` decimal(11,0) NOT NULL,
+  `kuantitas` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `penjualan`
+--
+
+CREATE TABLE `penjualan` (
+  `id` int(11) NOT NULL,
+  `kode` varchar(10) NOT NULL,
+  `id_customer` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `penjualan_detail`
+--
+
+CREATE TABLE `penjualan_detail` (
+  `id` int(11) NOT NULL,
+  `id_penjualan` int(11) NOT NULL,
+  `id_barang` int(11) NOT NULL,
+  `harga_barang` decimal(10,2) NOT NULL,
+  `kuantitas` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `supplier`
+--
+
+CREATE TABLE `supplier` (
+  `ID` int(11) NOT NULL,
+  `Nama` varchar(100) NOT NULL,
+  `Alamat` varchar(200) NOT NULL,
+  `Zip_code` varchar(20) NOT NULL,
+  `Phone_Number` varchar(20) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `supplier`
+--
+
+INSERT INTO `supplier` (`ID`, `Nama`, `Alamat`, `Zip_code`, `Phone_Number`, `Email`, `created_at`, `updated_at`) VALUES
+(1, 'Hanafi', 'Jalan Jemadi', '20239', '081288888888', 'hans@gmail.com', '2016-12-30 19:46:28', '2016-12-30 19:46:28');
 
 --
 -- Indexes for dumped tables
@@ -58,6 +175,42 @@ ALTER TABLE `barang`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexes for table `customer`
+--
+ALTER TABLE `customer`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `pembelian`
+--
+ALTER TABLE `pembelian`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pembelian_detail`
+--
+ALTER TABLE `pembelian_detail`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `penjualan`
+--
+ALTER TABLE `penjualan`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `penjualan_detail`
+--
+ALTER TABLE `penjualan_detail`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `supplier`
+--
+ALTER TABLE `supplier`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -65,7 +218,37 @@ ALTER TABLE `barang`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `customer`
+--
+ALTER TABLE `customer`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `pembelian`
+--
+ALTER TABLE `pembelian`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `pembelian_detail`
+--
+ALTER TABLE `pembelian_detail`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `penjualan`
+--
+ALTER TABLE `penjualan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `penjualan_detail`
+--
+ALTER TABLE `penjualan_detail`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `supplier`
+--
+ALTER TABLE `supplier`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

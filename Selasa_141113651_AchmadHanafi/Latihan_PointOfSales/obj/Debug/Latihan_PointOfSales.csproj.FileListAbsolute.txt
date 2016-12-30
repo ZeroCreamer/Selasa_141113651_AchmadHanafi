@@ -1,6 +1,5 @@
 D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\bin\Debug\Latihan_PointOfSales.exe.config
 D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.csprojResolveAssemblyReference.cache
-D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.frmMain.resources
 D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formRegistrasiBarang.resources
 D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.Properties.Resources.resources
 D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.csproj.GenerateResource.Cache
@@ -10,3 +9,19 @@ D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\bin\Debug\MyS
 D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\bin\Debug\MySql.Data.xml
 D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.exe
 D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.pdb
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.Mainform.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formDaftarbarang.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formDaftarcustomer.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formDaftarsupplier.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formDeletebarang.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formDeletecustomer.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formDeletesupplier.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formDetailpembelian.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formDetailpenjualan.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formEditbarang.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formEditcustomer.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formEditsupplier.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formPembelian.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formPenjualan.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formRegistrasicustomer.resources
+D:\v\New folder\Selasa_141113651_AchmadHanafi\Latihan_PointOfSales\obj\Debug\Latihan_PointOfSales.formRegistrasisupplier.resources
